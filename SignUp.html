@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./SignUp.css">
+</head>
+<body>
+    <div id="Main-Page">
+        <div class="Signup-page">
+            <div class="logo">
+                <img src="./Assets/JETFLIX.png" alt="">
+            </div>
+            <div class="Signup-container">
+                <video autoplay muted loop>
+                    <source src="./Assets/cuplikan.mp4"></source>
+                </video>
+                <div class="signup-contain">
+                    <div class="top-sign">
+                        <h3>Sign Up</h3>
+                    </div>
+                    <div class="form">
+                        <div class="form-data">
+                            <form action="MoviesPage.html">
+                                <h3>Username</h3>
+                                <div class="box">
+                                    <input type="text" name="username" id="usernametxt" required>
+                                </div>
+                                <h3>Password</h3>
+                                <div class="box">
+                                    <input type="password" name="password" id="passwordtxt" required>
+                                </div>
+                                <h3>Confirm Password</h3>
+                                <div class="box">
+                                    <input type="password" name="confirmpass" id="confirmpasstxt" required>
+                                </div>
+                                <h3>Date of Birth</h3>
+                                <div class="box">
+                                    <input type="tel" name="date" id="datetxt" pattern="[0-9]{2}" placeholder="Date" required>
+                                    <select name="month" id="monthtxt" required>
+                                        <option value="">~~ Month ~~</option>
+                                        <option value="january">January</option>
+                                        <option value="february">February</option>
+                                        <option value="march">March</option>
+                                        <option value="april">April</option>
+                                        <option value="may">May</option>
+                                        <option value="june">June</option>
+                                        <option value="july">July</option>
+                                        <option value="agust">Agust</option>
+                                        <option value="september">September</option>
+                                        <option value="october">October</option>
+                                        <option value="november">November</option>
+                                        <option value="december">Desember</option>
+                                    </select>
+                                    <input type="tel" name="year" id="yeartxt" pattern="[0-9]{4}" placeholder="Year" required>
+                                </div>
+                                <h3>Gender</h3>
+                                <div class="box-radio">
+                                    <div class="radiobox">
+                                        <input type="radio" nama="gender" id="genderM">
+                                        <h4>Male</h4>
+                                    </div>
+                                    <div class="radiobox">
+                                        <input type="radio" nama="gender" id="genderF">
+                                        <h4>Female</h4>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="box">
+                                    <input type="checkbox" name="tnc" id="tnc" required>
+                                    <h4>Yes, I agree the T&C</h4>
+                                </div>
+                                <div class="validasi">
+                                    <button onclick="validationCheck()">
+                                        <h4>Submit</h4>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav class="foot">
+            <div class="foot-wrap">
+                <h2>JETFLIX</h2>
+                <h3>Watch Together with Me</h3>
+            </div>
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <div class="c-container">
+                    <div class="c-contact">
+                        <a href="" class="hyperlink">
+                            <img src="./Assets/Instagram.png" alt="">
+                        </a>
+                        <h3>JetFlix.Official</h3>
+                    </div>
+                    <div class="c-contact">
+                        <a href="" class="hyperlink">
+                            <img src="./Assets/twitter.png" alt="">
+                        </a>
+                        <h3>JetFlix.Official</h3>
+                    </div>
+                    <div class="c-contact">
+                        <a href="" class="hyperlink">
+                            <img src="./Assets/facebook.png" alt="">
+                        </a>
+                        <h3>JetFlix.Official</h3>
+                    </div>
+                    <div class="c-contact">
+                        <a href="" class="hyperlink">
+                            <img src="./Assets/Youtube.png" alt="">
+                        </a>
+                        <h3>JetFlix.Official</h3>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="./SignUp.js"></script>
+</body>
+</html>
